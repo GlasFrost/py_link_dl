@@ -14,8 +14,8 @@ You use it in the command line:
   ./link_dl.py <url> <comment>
 ```
 
-<url> is the URL starting with "http://" and not containing any spaces.
-<comment> explains itself. It should contain at least one word. All chars the console supports as input are allowed.
+```<url>``` is the URL starting with "http://" and not containing any spaces.
+```<comment>``` explains itself. It should contain at least one word. All chars the console supports as input are allowed.
 WARNING: Use this scrit with care! SQL-injection-attacks are possible, just be warned.
 
 
