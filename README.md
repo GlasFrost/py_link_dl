@@ -15,9 +15,28 @@ You use it in the command line:
 ```
 
 ```<url>``` is the URL starting with "http://" and not containing any spaces.
+
 ```<comment>``` explains itself. It should contain at least one word. All chars the console supports as input are allowed.
+
 WARNING: Use this scrit with care! SQL-injection-attacks are possible, just be warned.
 
+"Did it work?"
+--------------
+There can be different things printed to the command line.
+
+```[SUC]``` indicates success.
+
+```[WRN]``` indicates an error that didn't cause the code to stop.
+
+```[ERR]``` indicates an error that caused the script to stop.
+
+It also says which class (in this case always "link_dl") and which function caused the message and of course it says what happened.
+
+If the script comes successfully to an end without an error, it says:
+
+```[SUC] link_dl.insert(): Done```
+
+The other messages explain themselves.
 
 Example:
 --------
