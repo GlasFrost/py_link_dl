@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+#f.write(urllib.request.urlopen("http://www.heise.de/thema/NSA").read().decode('utf8'))
+
 import os, sys, json, urllib.request
 import sqlite3 as lite
 
@@ -27,7 +29,7 @@ class link_dl:
 			print("[ERR] link_dl.insert(): No URL given!")
 			return False
 		else:
-			if "http://" in url:
+			if "http://" in url or "https://" in url:
 				try:
 					html = urllib.request.urlopen(url).read().decode('utf8')
 				except Exception as e:
@@ -54,7 +56,7 @@ class link_dl:
 
 if __name__ == '__main__':
 	if len(sys.argv) > 3:
-		if "http://" in sys.argv[1]:
+		if "http://" in sys.argv[1] or "https://" in sys.argv[1]:
 			url = sys.argv[1]
 			comment = " ".join(sys.argv[2:])
 			operator = link_dl()
