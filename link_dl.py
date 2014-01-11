@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-#f.write(urllib.request.urlopen("http://www.heise.de/thema/NSA").read().decode('utf8'))
-
 import os, sys, json, urllib.request
 import sqlite3 as lite
 
